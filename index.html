@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="referrer" content="never" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      crossorigin="anonymous"
+      src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin="anonymous"
+      src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"
+    ></script>
+    <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.7/dayjs.min.js"></script>
+    <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/antd/5.11.2/antd.min.js"></script>
+    <script
+      crossorigin="anonymous"
+      src="https://cdnjs.cloudflare.com/ajax/libs/ant-design-icons/5.0.1/index.umd.min.js"
+    ></script>
+    <link
+      crossorigin="anonymous"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/antd/5.11.2/reset.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@jswork/loading-screen@1.0.4/dist/index.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/nprogress@0.2.0/nprogress.css" />
+
+    <title>YAHBB Logistics</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      if (global === undefined) var global = window;
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+    <script src="https://unpkg.com/@jswork/loading-screen@1.0.6/dist/lskit.js"></script>
+    <script src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
+    <script>
+      window.lskit({ locale: 'en-US', sw: 60 * 1000 });
+    </script>
+    <script>
+      window.onload = function () {
+        var head = document.getElementsByTagName('head')[0];
+        var fbScript = document.createElement('script');
+        fbScript.type = 'text/javascript';
+        fbScript.async = true;
+        // this url MUST NOT BE mgt by sw.js
+        fbScript.src = './fallback.js?v=' + Date.now();
+        fbScript.onload = function () {
+          if (navigator && navigator.serviceWorker && window.__SW_DISABLED__) {
+            navigator.serviceWorker.getRegistration('/').then(function (reg) {
+              reg && reg.unregister();
+            });
+          }
+        };
+        head.appendChild(fbScript);
+      };
+    </script>
+  </body>
+</html>

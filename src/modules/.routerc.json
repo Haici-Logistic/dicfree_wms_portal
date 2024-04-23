@@ -1,0 +1,107 @@
+{
+  "children": [
+    {
+      "children": [{ "routerFilePath": "/__shared__/404.tsx", "routerPath": "404" }],
+      "routerPath": "/__shared__",
+      "routerFilePath": null
+    },
+    {
+      "children": [
+        { "children": [{ "routerFilePath": "/admin/__shared__/404.tsx", "routerPath": "404" }] },
+        {
+          "children": [
+            { "routerFilePath": "/admin/box-arrival-orders/add.tsx", "routerPath": "add" },
+            { "routerFilePath": "/admin/box-arrival-orders/edit.tsx", "routerPath": "edit" },
+            { "routerIndex": true, "routerFilePath": "/admin/box-arrival-orders/index.tsx" }
+          ],
+          "routerFilePath": "/admin/box-arrival-orders/__init__.tsx",
+          "routerPath": "box-arrival-orders"
+        },
+        {
+          "children": [{ "routerIndex": true, "routerFilePath": "/admin/box-arrival-orders-plan/index.tsx" }],
+          "routerFilePath": "/admin/box-arrival-orders-plan/__init__.tsx",
+          "routerPath": "box-arrival-orders-plan"
+        },
+        { "children": [], "routerFilePath": "/admin/box-inbounds/__init__.tsx", "routerPath": "box-inbounds" },
+        { "children": [], "routerFilePath": "/admin/box-outbounds/__init__.tsx", "routerPath": "box-outbounds" },
+        {
+          "children": [{ "routerIndex": true, "routerFilePath": "/admin/box-skus/index.tsx" }],
+          "routerFilePath": "/admin/box-skus/__init__.tsx",
+          "routerPath": "box-skus"
+        },
+        {
+          "children": [{ "routerIndex": true, "routerFilePath": "/admin/box-sns/index.tsx" }],
+          "routerFilePath": "/admin/box-sns/__init__.tsx",
+          "routerPath": "box-sns"
+        },
+        {
+          "children": [
+            { "routerFilePath": "/admin/collection-tasks/add.tsx", "routerPath": "add" },
+            { "routerFilePath": "/admin/collection-tasks/edit.tsx", "routerPath": "edit" },
+            { "routerIndex": true, "routerFilePath": "/admin/collection-tasks/index.tsx" },
+            { "routerFilePath": "/admin/collection-tasks/show.tsx", "routerPath": "show" }
+          ],
+          "routerFilePath": "/admin/collection-tasks/__init__.tsx",
+          "routerPath": "collection-tasks"
+        },
+        { "routerIndex": true, "routerFilePath": "/admin/index.tsx" },
+        {
+          "children": [{ "routerIndex": true, "routerFilePath": "/admin/member-product-delivery-orders/index.tsx" }],
+          "routerFilePath": "/admin/member-product-delivery-orders/__init__.tsx",
+          "routerPath": "member-product-delivery-orders"
+        },
+        {
+          "children": [
+            { "routerFilePath": "/admin/params/add.tsx", "routerPath": "add" },
+            { "routerFilePath": "/admin/params/edit.tsx", "routerPath": "edit" },
+            { "routerIndex": true, "routerFilePath": "/admin/params/index.tsx" }
+          ],
+          "routerFilePath": "/admin/params/__init__.tsx",
+          "routerPath": "params"
+        },
+        {
+          "children": [
+            { "routerFilePath": "/admin/product-delivery-orders/add.tsx", "routerPath": "add" },
+            { "routerFilePath": "/admin/product-delivery-orders/edit.tsx", "routerPath": "edit" },
+            { "routerIndex": true, "routerFilePath": "/admin/product-delivery-orders/index.tsx" }
+          ],
+          "routerFilePath": "/admin/product-delivery-orders/__init__.tsx",
+          "routerPath": "product-delivery-orders"
+        },
+        { "children": [], "routerFilePath": "/admin/product-inbounds/__init__.tsx", "routerPath": "product-inbounds" },
+        {
+          "children": [],
+          "routerFilePath": "/admin/product-outbounds-sorting/__init__.tsx",
+          "routerPath": "product-outbounds-sorting"
+        },
+        {
+          "children": [],
+          "routerFilePath": "/admin/product-outbounds-verify/__init__.tsx",
+          "routerPath": "product-outbounds-verify"
+        },
+        {
+          "children": [
+            { "routerFilePath": "/admin/roles/add.tsx", "routerPath": "add" },
+            { "routerFilePath": "/admin/roles/edit.tsx", "routerPath": "edit" },
+            { "routerIndex": true, "routerFilePath": "/admin/roles/index.tsx" }
+          ],
+          "routerFilePath": "/admin/roles/__init__.tsx",
+          "routerPath": "roles"
+        },
+        {
+          "children": [
+            { "routerFilePath": "/admin/users/add.tsx", "routerPath": "add" },
+            { "routerFilePath": "/admin/users/edit.tsx", "routerPath": "edit" },
+            { "routerIndex": true, "routerFilePath": "/admin/users/index.tsx" }
+          ],
+          "routerFilePath": "/admin/users/__init__.tsx",
+          "routerPath": "users"
+        },
+        { "children": [], "routerFilePath": "/admin/waybill-print/__init__.tsx", "routerPath": "waybill-print" }
+      ],
+      "routerPath": "admin",
+      "routerFilePath": "/admin/__init__.tsx"
+    },
+    { "children": [], "routerPath": "login", "routerFilePath": "/login/__init__.tsx" }
+  ]
+}

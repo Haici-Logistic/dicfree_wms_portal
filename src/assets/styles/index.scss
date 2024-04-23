@@ -1,0 +1,107 @@
+//@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'print-js/dist/print.css';
+@import '@jswork/react-full-image/dist/style.css';
+@import '@jswork/react-codeflask/dist/style.css';
+@import '@jswork/vite-pwa-promotion/dist/style.css';
+@import '@jswork/react-breadcrumb/dist/style.scss';
+@import '@jswork/antd-components/dist/style.scss';
+@import '@jswork/react-kbar/dist/style.scss';
+@import '@jswork/wsui-table/dist/index.scss';
+@import '@jswork/react-page-exception/dist/style.scss';
+
+body,
+figure {
+  margin: 0;
+}
+
+.react-interactive-list {
+  &[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+.ant-form-item {
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .react-interactive-list {
+    padding: 10px;
+    border-radius: 5px;
+    background: #eee;
+  }
+}
+
+.ant-card .ant-card-head {
+  background: #fff;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+}
+
+kbd {
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+  color: #333;
+  display: inline-block;
+  font-family: monospace, sans-serif;
+  font-size: 100%;
+  line-height: 1.4;
+  margin: 0 0.1em;
+  padding: 0.1em 0.6em;
+  text-shadow: 0 1px 0 #fff;
+}
+
+.wsui-table th,
+.wsui-table td {
+  padding: 10px;
+}
+
+.ant-table-thead .ant-table-cell {
+  text-transform: capitalize;
+}
+
+.ant-table-row {
+  cursor: default;
+}
+
+.highlight-row {
+  background: #e6f4ff;
+  .ant-table-cell-row-hover,
+  &:hover {
+    background: #e6f4ff !important;
+  }
+}
+
+.blink-row {
+  animation: blinker 1.5s linear 3;
+}
+
+@keyframes blinker {
+  0% {
+    background: transparent;
+  }
+  50% {
+    opacity: 0.5;
+    background-color: #91caff;
+  }
+}
+
+#nprogress .spinner {
+  display: block;
+  position: fixed;
+  z-index: 1031;
+  top: 15px;
+  right: 135px;
+}
+
+.ant-transfer .ant-transfer-list {
+  width: 50%;
+  min-height: 500px;
+}

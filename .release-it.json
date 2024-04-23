@@ -1,0 +1,14 @@
+{
+  "git": {
+    "requireCleanWorkingDir": false
+  },
+  "hooks": {
+    "after:bump": "auto-changelog -p && git add CHANGELOG.md"
+  },
+  "github": {
+    "release": false,
+    "releaseName": "Release ${version}",
+    "skipChecks": true,
+    "releseNotes": "git log --no-merges --pretty=format:\"* %s %h\" ${latestTag}...main"
+  }
+}

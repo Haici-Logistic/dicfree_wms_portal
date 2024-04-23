@@ -1,0 +1,7 @@
+{
+  "autoVersion": true,
+  "commands": [
+    { "label": "🍏 发布到 beta 环境", "value": "beta" },
+    { "label": "🍎 发布到 production 环境", "value": "production" }
+  ]
+}
